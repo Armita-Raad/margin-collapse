@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+.font{
+  font-family: kalam;
+  background-color: #FFE7C277;
+  
+}
+  .tangerine{
+   width: 50%;
+   text-align: center;
+   border: 0.4rem #FFBFDDFF solid;
+   background-color: #FFF7B0FF; 
+   padding: 1em;
+   color: #5465FFBC; 
+   border-radius: 3rem;
+   /* text-decoration: underline */
+   margin: 2rem auto;
+   
+}
+.broccoli{
+  border: 0.4rem #758A87E5 solid;
+  border-radius: 3rem;
+  background-color: #D9FFFBE5;
+  text-align: left;
+  width: 15%;
+  color: rgb(122, 90, 90);
+  margin-left: 1rem;
+  
+  
+}
+.pomegranate{
+  border: 0.4rem #661F00E5 solid;
+  border-radius: 3rem;
+  /* text-align: center; */
+  /* display: inline-block; */
+  padding: 20px;
+  color: #8A0000E5;
+  background-color: #E0D1FFE5;
+  margin: 2rem auto;
+  width: 70%;
+}
+.blueberry{
+  border: solid #901CC9E5 0.4rem;
+  border-radius: 3rem;
+  padding: 20px;
+  background-color: #267DFFE5;
+  color: #D9FF00FF;
+  margin: 2rem auto;
+  width: 70%;
+}
+.motomoto{
+  background-color: #F8FFDBFF;
+  color: #498C52FF;
+  border-radius: 1rem;
+  margin-left: -2rem;
+  padding: 20px;
+}
+.tomotomo{
+  border: solid 0.4rem #3B388CFF;
+  border-radius: 3rem;
+  padding: 20px;
+  margin-right: 2rem;
+  text-align: center;
+  width: fit-content;
+  background-color: #ED8C1AFF;
+ margin-left: 88%;
+ 
+}
+.links{
+  text-decoration: overline;
+}

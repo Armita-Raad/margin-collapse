@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Collapse</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="font">
+    <nav>
+      <h1 class="tangerine">MARGIN COLLAPSE</h1>
+      <ul class="broccoli">
+        <li ><a href="#explanation" >A Brief Explanation</a></li>
+        <li><a href="#fixing" class="Links">Fixing Margin Collapses</a></li>
+        <li><a href="#footer" class="Links">Links of the Resources</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <main class="parent">
+      <section class="pomegranate" id="Explanation">
+        <h3>A Brief Explanation</h3>
+        <p>
+          Margin collapse is a phenomenon in CSS where the vertical margins of
+          adjacent elements collapse into each other, resulting in a smaller
+          margin than expected. This can occur when two elements with margins
+          are placed next to each other, or when an element with a margin is
+          placed next to a parent element with a margin. Understanding margin
+          collapse is important for properly controlling the spacing and layout
+          of web pages.
+        </p>
+      </section>
+      <section class="blueberry" id="Fixing">
+        <h3>Fixing Margin Collapses</h3>
+        <p>
+          Margin collapse occurs when the margins of two adjacent elements
+          overlap, and the larger margin takes precedence over the smaller one.
+          To fix margin collapse in CSS, you can use one of the following
+          methods:
+        </p>
+        <br />
+        <ol>
+          <li>
+            <p>
+              Add padding or border to the parent element: By adding padding or
+              border to the parent element, you can prevent the margins of the
+              child elements from collapsing. <br> For example:
+            </p>
+            <p class="motomoto">
+              .parent { padding: 1px; <br />
+              }
+            </p>
+            <br />
+          </li>
+          <li>
+            <p>
+              Use the "overflow" property: Setting the "overflow" property of
+              the parent element to "auto" or "hidden" can also prevent margin
+              collapse. <br> For example:
+            </p>
+            <p class="motomoto">.parent { overflow: auto; <br> }
+            </li></p>
+            <br>
+          <li><p>Add an empty element: Adding an empty element with "clear: both"
+            after the parent element can also prevent margin collapse. <br> For
+            example: </p>
+          <p class="motomoto"> .parent:after { content: ""; display: table; clear: both; <br> }</p>
+            
+           
+          </li>
+          <li><p>We can also add more amount to the margin element for fixing the bug; The amount we add should be as much as the upper content's margin. <br>For example: </p>
+          <p class="motomoto">.parent { margin: 2rem ;<br> }
+          <br> .child { margin: 2+2rem ;<br> }</p></li>
+        </ol><br>
+        <p>
+          By using one of these methods, you can fix margin collapse and ensure
+          that your layout looks the way you intended it to.
+        </p>
+      </section>
+      <hr />
+    </main>
+    <footer id="footer" class="tomotomo">
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing" class="Links"
+        target="_blank"
+        >MDN LINK</a
+      ><br />
+      <a
+        href="https://css-tricks.com/what-you-should-know-about-collapsing-margins/"
+        target="_blank" class="Links"
+        >CSS TRICKS</a
+      >
+    </footer>
+  </body>
+</html>
